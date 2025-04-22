@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Run the World</title>
+        <link src="shortcut icon" href="Run the world_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styless.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+          <!--Responsive Menu-->
+        <nav class="navbar">
+            <div class="logo">
+            <img src="Run the world_logo.png" alt="Logo Run the World" />
+            <span>Run the World</span>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+            ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+            <li class="dropdown"></li>
+            <!--Inicio con su icono-->
+            <i class="fa fa-home" style="font-size:24px;color: white;"></i>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <!--Destino con su icnono-->
+            <li class="dropdown">
+            <i class="material-icons" style="font: size 24px;color: white;">place</i>
+            <a href="destinos.html" class="active">Destinos</a>
+                <ul class="dropdown-menu">
+                    <li><a href="">Rincones Secretos</a></li>
+                    <li><a href="">Rutas de Estación</a></li>
+                    <li><a href="">Libera tu Espíritu</a></li>
+                    <li><a href="">Vibra con el Mundo</a></li>
+                    <li><a href="">Rinde tu Propio Desfile</a></li>
+                    <li><a href="">Escapadas Cortas</a></li>
+                </ul>
+            </li>
+            <!--Tips con su icono-->
+            <i class="fa fa-suitcase" style="font-size:24px;color: white;"></i>
+            <li><a href="tips de viajes.html" class="active">Tips de Viajes</a></li>
+            <!--Creador con su icono-->
+            <i class="material-icons" style="font-size:24px;color: white;">person</i>
+            <li><a href="about.html">Sobre el creador</a></li>
+            <!--Contacto con su icono-->
+            <i class="material-icons" style="font-size:24px;color: white;">contact_mail</i>
+            <li><a href="contact.html">Contáctame</a></li>
+            </ul>
+        </nav>
+
+  <script>
+    function toggleMenu(){
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+<!--Titulo-->
+<h1 class="titulo">Destinos</h1>
+<!--Imagen de destino-->
+<div class="imagen-destinos">
+    <img src="imagen_destinos.jpg" alt="Fotos de diferentes paises" class="main-image">
+</div>
+
+<!--Párrafo-->
+<br>
+<div class="card-description">
+    <p><b>Donde cada lugar cuenta una historia, y cada historia despierta el alma.</b></p>
+    <p id="parrafo">Desde rincones escondidos hasta ciudades vibrantes, aquí encontrarás destinos que inspiran, transforman y conectan. 
+      Ya sea que viajes en busca de aventuras intensas, cultura auténtica o paisajes que quiten el aliento, este espacio está 
+      hecho para que descubras el mundo con el corazón abierto y la mochila lista.</p>
+    <p><i>Prepárate para viajar con propósito... porque vivir es recorrer, sentir y volver a empezar.</i></p>
+</div>
+
+<!--Opciones-->
+<section class="destinos">
+  <h2>Explora Destinos Únicos</h2>
+  <p class="descripcion">Sumérgete en rutas ocultas, aventuras inolvidables y lugares que despiertan tu espíritu viajero. ¡Elige tu camino!</p>
+<div class="grid-destinos">
+  <div class="tarjeta fade-in">
+    <div class="fondo" style="background-image: url('rincones\ secretos.jpg');"></div>
+    <h3>Rincones Secretos</h3>
+  </div>
+  <div class="tarjeta fade-in">
+    <div class="fondo" style="background-image: url('rutas\ de\ estacion.jpg');"></div>
+    <h3>Rutas de Estación</h3>
+  </div>
+  <div class="tarjeta fade-in">
+    <div class="fondo" style="background-image: url('libera\ tu\ espiritu.jpg');"></div>
+    <h3>Libera tu Espíritu</h3>
+  </div>
+  <div class="tarjeta fade-in">
+    <div class="fondo" style="background-image: url('vibra\ con\ el\ mundo.jpg');"></div>
+    <h3>Vibra con el Mundo</h3>
+  </div>
+  <div class="tarjeta fade-in">
+    <div class="fondo" style="background-image: url('rinde\ tu\ propio\ estilo.jpg');"></div>
+    <h3>Rinde tu Propio Desfile</h3>
+  </div>
+  <div class="tarjeta fade-in">
+    <div class="fondo" style="background-image: url('escapadas\ cortas.jpg');"></div>
+    <h3>Escapadas Cortas</h3>
+  </div>
+</div>
+</section>
+
+<!--Pie de página-->
+<br>
+<footer class="footer">
+  <p>Mi blog de viajes. Todos los derechos reservados.</p>
+  <p>Hecho con 💜 Liz</p>
+</footer>
+<br>  
+</body>
+</html>

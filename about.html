@@ -7,5 +7,70 @@
         <link src="shortcut icon" href="Run the world_logo.png" type="image/x-icon">
         <link rel="stylesheet" href="./styless.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
+    <body>
+        <!--Responsive Menu-->
+        <nav class="navbar">
+            <div class="logo">
+            <img src="Run the world_logo.png" alt="Logo Run the World" />
+            <span>Run the World</span>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+            ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+            <li class="dropdown"></li>
+            <!--Inicio con su icono-->
+            <i class="fa fa-home" style="font-size:24px;color: white;"></i>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <!--Destino con su icnono-->
+            <li class="dropdown">
+            <i class="material-icons" style="font: size 24px;color: white;">place</i>
+                <a href="destinos.html" class="active">Destinos</a>
+            <ul class="dropdown-menu">
+                <li><a href="">Rincones Secretos</a></li>
+                <li><a href="">Rutas de Estación</a></li>
+                <li><a href="">Libera tu Espíritu</a></li>
+                <li><a href="">Vibra con el Mundo</a></li>
+                <li><a href="">Rinde tu Propio Desfile</a></li>
+                <li><a href="">Escapadas Cortas</a></li>
+            </ul>
+            </li>
+            <!--Tips con su icono-->
+            <i class="fa fa-suitcase" style="font-size:24px;color: white;"></i>
+            <li><a href="tips de viajes.html" class="active">Tips de Viajes</a></li>
+            <!--Creador con su icono-->
+            <i class="material-icons" style="font-size:24px;color: white;">person</i>
+            <li><a href="about.html">Sobre el creador</a></li>
+            <!--Contacto con su icono-->
+            <i class="material-icons" style="font-size:24px;color: white;">contact_mail</i>
+            <li><a href="contact.html">Contáctame</a></li>
+            </ul>
+        </nav>
+
+    <script>
+        function toggleMenu(){
+        document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+        
+    <div class="container">
+        <img class="fondo" src="fondo_titulo.jpg" alt="Cinque Terre" width="1000" height="300">
+        <div class="center">
+            <h1 class="titulo">Sobre mí</h1>
+        </div>
+    </div>
+
+    <!--Pie de página-->
+    <footer class="footer">
+        <p>Mi blog de viajes. Todos los derechos reservados.</p>
+        <p>Hecho con 💜 Liz</p>
+    </footer>
+    <br>  
+    
+    </body>
 </html>

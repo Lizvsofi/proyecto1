@@ -137,7 +137,7 @@ body {
     max-width: 100%;
     margin: 40px auto;
     padding: 20px 30px;
-    background-color: #e2e2e2e3;
+    background: #e2e2e2e3;
     border-radius: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
@@ -181,4 +181,270 @@ body {
     padding: 20px 10px;
     font-size: 0.95rem;
     border-top: 3px solid #a54dd8;
+}
+/*Página de destinos*/
+/*Titulo principal*/
+.titulo {
+  font-family: "Rock Salt", cursive;
+  font-weight: bold;
+  height: auto;
+  font-style: italic;
+  text-align: center;
+  font-size: 6em;
+  margin-top: 40px;
+}
+@media (max-width:768px){
+  .titulo{
+    font-size:2.2rem;
+  }
+}
+@media (max-width: 480px){
+  .titulo{
+    font-size: 1.8rem;
+  }
+}
+/*Imagen de destinos*/
+.imagen-destinos{
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+  height: auto;
+}
+/*Descripción de la página*/
+.card-description{
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background-color: #f5f1ff;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: black;
+}
+/*Opciones*/
+.destinos {
+  padding: 40px 20px;
+  background-color: #f5f1ff;
+  text-align: center;
+  background-image: linear-gradient(308deg, #7850f5, #a17bf7, #c1a6f7, #ded1f7);
+}
+
+.destinos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #5400a3;
+}
+
+.descripcion {
+  margin-bottom: 40px;
+  color: #555;
+  font-style: italic;
+}
+
+.grid-destinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+}
+
+.fondo {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.tarjeta h3 {
+  padding: 15px;
+  font-size: 1.1rem;
+  color: #333;
+  background-color: white;
+}
+
+/* Animación fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+/*Tips de viajes*/
+.tips-header {
+  text-align: center;
+  padding: 2rem 1rem 0;
+}
+
+.tips-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.swiper {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.swiper-slide {
+  background: #e2e2e2e3;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  position: relative;
+  text-align: center;
+  color: black;
+  max-width: 320px;
+}
+
+.tip-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tip-content {
+  padding: 1rem;
+}
+
+.tip-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #8e24aa;
+}
+
+.tip-content p {
+  font-size: 0.95rem;
+}
+
+/*Sobre mí index*/
+.about-section {
+  padding: 80px 20px;
+  background-image: linear-gradient(139deg, #7850f5, #a17bf7, #c1a6f7, #ded1f7);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-text h2 {
+  font-size: 2.5em;
+  color: #5e2b8c;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: #8e44ad;
+  font-weight: bold;
+}
+
+.signature {
+  font-style: italic;
+  color: #8e44ad;
+  font-size: 1.3em;
+}
+
+.btn-about {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #8e44ad;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-about:hover {
+  background-color: #732d91;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 0 10px;
+  }
+}
+
+/*Sobre mí*/
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.fondo{ 
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  
 }
