@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Run the World</title>
+        <link rel="shortcut icon" href="Run the world_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styless.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;  
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                margin-top: 3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                background: transparent;
+            }
+            body {
+                background-image: url(fondo_contact.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: 100% 100%;
+            }
+
+        </style>
+</head>
+<body>
+    <!--Responsive Menu-->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Run the world_logo.png" alt="Logo Run the World" />
+      <span>Run the World</span>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li class="dropdown"></li>
+        <!--Inicio con su icono-->
+        <i class="fa fa-home" style="font-size:24px;color: white;"></i>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <!--Destino con su icnono-->
+        <li class="dropdown">
+          <i class="material-icons" style="font: size 24px;color: white;">place</i>
+          <a href="destinos.html" class="active">Destinos</a>
+        <ul class="dropdown-menu">
+          <li><a href="">Rincones Secretos</a></li>
+          <li><a href="">Rutas de Estación</a></li>
+          <li><a href="">Libera tu Espíritu</a></li>
+          <li><a href="">Vibra con el Mundo</a></li>
+          <li><a href="">Rinde tu Propio Desfile</a></li>
+          <li><a href="">Escapadas Cortas</a></li>
+        </ul>
+      </li>
+        <!--Tips con su icono-->
+        <i class="fa fa-suitcase" style="font-size:24px;color: white;"></i>
+        <li><a href="tips de viajes.html" class="active">Tips de Viajes</a></li>
+        <!--Creador con su icono-->
+        <i class="material-icons" style="font-size:24px;color: white;">person</i>
+        <li><a href="about.html">Sobre el creador</a></li>
+        <!--Contacto con su icono-->
+        <i class="material-icons" style="font-size:24px;color: white;">contact_mail</i>
+        <li><a href="contact.html">Contáctame</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu(){
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+
+  <!--Imagen de fondo-->
+
+
+  <!--Formulario de contacto-->
+  <div class="container">
+    <div class="form_area">
+        <p class="title">Contáctame</p>
+        <form action="">
+            <div class="form_group">
+                <label class="sub_title" for="name">Nombre</label>
+                <input placeholder="Introduce tu nombre" class="form_style" type="text">
+            </div>
+            <div class="form_group">
+                <label class="sub_title" for="email">Email</label>
+                <input placeholder="Introduce tu correo" id="email" class="form_style" type="email">
+            </div>
+            <div class="form_group">
+                <label class="sub_title" for="comentarios">Comentarios</label>
+                <textarea id="subject" class="form_style" name="subject" placeholder="Escribe un comentario" style="height:200px"></textarea>
+            </div>
+            <div>
+                <button class="btn">ENVIAR</button>
+                <p>Gracias 💜</p>
+              </div>
+        </form> 
+    </div>
+  </div>   
+<br>
+  <!--Pie de página-->
+<footer class="footer">
+  <p>Mi blog de viajes. Todos los derechos reservados.</p>
+  <br>
+  <p>Hecho con 💜 Liz</p>
+  <br>
+  <ul class="social-icons">
+    <!-- Icono Facebook -->
+    <li class="redes"><i class="fa fa-facebook-official" style="font-size:24px"></i></li>
+    
+    <!-- Icono LinkedIn -->
+    <li class="redes"><i class="fa fa-linkedin-square" style="font-size:24px"></i></li>
+    
+    <!-- Icono WhatsApp -->
+    <li class="redes"><i class="fa fa-whatsapp" style="font-size:24px"></i></li>
+    
+    <!-- Icono Instagram -->
+    <li class="redes"><i class="fa fa-instagram" style="font-size:24px"></i></li>
+  </ul>
+  
+</footer>
+
+
+</body>
+</html>
